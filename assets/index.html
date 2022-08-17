@@ -11,10 +11,11 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/darkstyle.css" />
     <title>Google</title>
   </head>
 
-  <body>
+  <body class="dark-mode">
     <header>
       <nav class="nav-bar">
         <ul class="nav-items">
@@ -28,7 +29,10 @@
               >Images</a
             >
           </li>
-          <li class="app-icon">
+          <li class="dark-app-icon">
+            <img src="./icons/GOOgle apps dark.png" alt="" />
+          </li>
+          <li class="app-icon hidden">
             <img src="./icons/dot-icon-20.jpg" alt="" />
           </li>
           <li class="sign-in">
@@ -36,7 +40,7 @@
               href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ"
               target="_blank"
             >
-              <button class="sign-btn">Sign in</button></a
+              <button class="sign-btn dark-sign">Sign in</button></a
             >
           </li>
         </ul>
@@ -47,9 +51,10 @@
 
     <main>
       <section class="logo-container">
-        <div class="logo">
+        <div class="logo hidden">
           <img src="./images/googlelogo_color_272x92dp.png" alt="Google Logo" />
         </div>
+        <div class="logo-dark"></div>
       </section>
 
       <section class="search-container">
@@ -64,7 +69,15 @@
             <span class="voice-tooltip">Search by voice</span>
           </div>
         </div>
-        <div class="search-btn">
+        <div class="search-btn hidden">
+          <a href="#">
+            <button>Google Search</button>
+          </a>
+          <a href="https://www.google.com/doodles">
+            <button>I'm Feeling Lucky</button>
+          </a>
+        </div>
+        <div class="btn-dark">
           <a href="#">
             <button>Google Search</button>
           </a>
@@ -76,7 +89,7 @@
 
       <section class="languages">
         <div>
-          <ul class="langs">
+          <ul class="langs-dark">
             <li class="lang">Google offered in&colon;</li>
             <li class="lang">
               <a
@@ -107,49 +120,51 @@
       </section>
 
       <footer>
-        <div class="nigeria"><p>Nigeria</p></div>
-        <!-- <hr /> -->
-        <div class="others">
-          <ul class="foot-links start">
-            <li>
-              <a
-                href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.google.com/intl/en_ng/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
-                >Advertising</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
-                >Business</a
-              >
-            </li>
-            <li>
-              <a href="https://google.com/search/howsearchworks/?fg=1"
-                >How search works</a
-              >
-            </li>
-          </ul>
-          <div>
-            <p class="carbon">
-              <i><img src="./icons/leaf stuff.png" alt="" /></i
-              ><a
-                href="https://sustainability.google/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="
-              >
-                Carbon neutral since 2007</a
-              >
-            </p>
+        <div class="foot">
+          <div class="nigeria"><p>Nigeria</p></div>
+          <!-- <hr /> -->
+          <div class="others">
+            <ul class="foot-links start">
+              <li>
+                <a
+                  href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/intl/en_ng/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+                  >Advertising</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+                  >Business</a
+                >
+              </li>
+              <li>
+                <a href="https://google.com/search/howsearchworks/?fg=1"
+                  >How search works</a
+                >
+              </li>
+            </ul>
+            <div>
+              <p class="carbon">
+                <i><img src="./icons/leaf stuff.png" alt="" /></i
+                ><a
+                  href="https://sustainability.google/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="
+                >
+                  Carbon neutral since 2007</a
+                >
+              </p>
+            </div>
+            <ul class="foot-links end">
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Settings</a></li>
+            </ul>
           </div>
-          <ul class="foot-links end">
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Terms</a></li>
-            <li><a href="">Settings</a></li>
-          </ul>
         </div>
       </footer>
     </main>
