@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
+    <linknav-items
       rel="icon"
       href="./images/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
     />
@@ -17,6 +17,7 @@
 
   <body class="dark-mode">
     <header>
+      <button class="mode-dark">Dark-Mode</button>
       <nav class="nav-bar">
         <ul class="nav-items">
           <li class="nav-item">
@@ -29,10 +30,10 @@
               >Images</a
             >
           </li>
-          <li class="dark-app-icon">
+          <li class="dark-app-icon hidden">
             <img src="./icons/GOOgle apps dark.png" alt="" />
           </li>
-          <li class="app-icon hidden">
+          <li class="app-icon">
             <img src="./icons/dot-icon-20.jpg" alt="" />
           </li>
           <li class="sign-in">
@@ -40,7 +41,7 @@
               href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ"
               target="_blank"
             >
-              <button class="sign-btn dark-sign">Sign in</button></a
+              <button class="sign-btn">Sign in</button></a
             >
           </li>
         </ul>
@@ -51,15 +52,15 @@
 
     <main>
       <section class="logo-container">
-        <div class="logo hidden">
+        <div class="logo">
           <img src="./images/googlelogo_color_272x92dp.png" alt="Google Logo" />
         </div>
-        <div class="logo-dark"></div>
+        <div class="logo-dark hidden"></div>
       </section>
 
       <section class="search-container">
-        <div class="search-bar search-bar-dark">
-          <input class="search search-dark" type="search" />
+        <div class="search-bar">
+          <input class="search" type="search" />
           <div class="search-icon">
             <img src="./icons/search-icon-png-2.png" alt="search-icon" />
             <span class="search-tooltip">Search</span>
@@ -69,7 +70,7 @@
             <span class="voice-tooltip">Search by voice</span>
           </div>
         </div>
-        <div class="search-btn hidden">
+        <div class="search-btn">
           <a href="#">
             <button>Google Search</button>
           </a>
@@ -77,7 +78,7 @@
             <button>I'm Feeling Lucky</button>
           </a>
         </div>
-        <div class="btn-dark">
+        <div class="btn-dark hidden">
           <a href="#">
             <button>Google Search</button>
           </a>
@@ -89,7 +90,7 @@
 
       <section class="languages">
         <div>
-          <ul class="langs langs-dark">
+          <ul class="langs">
             <li class="lang">Google offered in&colon;</li>
             <li class="lang">
               <a
@@ -121,9 +122,9 @@
 
       <footer>
         <div class="foot">
-          <div class="nigeria nigeria-dark"><p>Nigeria</p></div>
+          <div class="nigeria"><p>Nigeria</p></div>
           <!-- <hr /> -->
-          <div class="others others-dark">
+          <div class="others">
             <ul class="foot-links start">
               <li>
                 <a

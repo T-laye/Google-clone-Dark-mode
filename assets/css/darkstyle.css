@@ -4,7 +4,27 @@
   color: #fff;
 }
 
-.nav-items a {
+.mode-dark {
+  background-color: rgb(151, 151, 151);
+  color: rgb(70, 70, 70);
+  padding: 4px 8px;
+  border-radius: 5px;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  cursor: pointer;
+}
+
+.mode-dark:hover {
+  background-color: white;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.438);
+}
+
+.mode-dark:active {
+  border: none;
+}
+
+.nav-items-dark a {
   color: #fff;
 }
 
@@ -64,13 +84,13 @@
   background-position: center -59px;
 }
 
-.logo-dark .dark-logo {
+/* .logo-dark .dark-logo {
   margin: 0 auto;
   display: flex;
   height: 220%;
   width: 10%;
   padding-bottom: 100px;
-}
+} */
 
 /* Search Bar */
 .search-dark {
