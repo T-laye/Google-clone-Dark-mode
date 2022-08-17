@@ -46,7 +46,7 @@
   margin: auto;
 }
 .dark-app-icon:hover {
-  background-color: rgb(233, 232, 232);
+  background-color: rgb(56, 56, 56);
 }
 
 .logo-container {
@@ -73,9 +73,21 @@
 }
 
 /* Search Bar */
-.search-bar .search-tooltip {
+.search-dark {
+  border: 1px solid rgba(168, 168, 168, 0.562);
+  outline: none;
+  background-color: rgba(32, 33, 36, 1);
+  color: #fff;
+  border-radius: 100px;
+  width: 100%;
+  padding: 2px 40px;
+  font-size: 16px;
+  transition: all 0.1s;
+}
+
+.search-bar-dark .search-tooltip {
   position: absolute;
-  background-color: #2021249d;
+  background-color: rgba(32, 33, 36, 1);
   color: rgb(230, 228, 228);
   padding: 6px 10px;
   font-size: 12px;
@@ -88,12 +100,14 @@
   transition: opacity 0.5s ease-in;
 }
 
-.search-bar:hover .search-tooltip {
+.search-bar-dark:hover .search-tooltip {
   opacity: 1;
 }
 
-.search:hover,
-.search:focus {
+.search-dark:hover,
+.search-dark:focus {
+  border: 1px solid rgb(42, 43, 48);
+  background-color: rgb(42, 43, 48);
   box-shadow: 0px 0px 4px 2px rgba(44, 44, 44, 0.2);
 }
 
@@ -138,6 +152,35 @@
 .langs-dark a:visited {
   font-size: small;
   color: #8ab4f8;
+}
+
+.langs-dark a:hover,
+.langs-dark a:active {
+  text-decoration: underline;
+  /* font-weight: 600; */
+}
+
+/* Footer */
+.nigeria-dark {
+  background-color: #131313;
+  display: flex;
+  height: 48px;
+  padding: 16px 0 0 30px;
+  color: #70757a;
+  /* align-items: center; */
+  font-size: 15px;
+  border-bottom: 1px solid #3c4043;
+}
+
+.others-dark {
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  height: 48px;
+  padding-top: 5px;
 }
 
 /* hidden class */
