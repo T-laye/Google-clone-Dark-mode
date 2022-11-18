@@ -16,6 +16,7 @@ body {
   font-family: arial, sans-serif;
   font-size: 14px;
   color: #202124;
+  /* overflow-y: scroll; */
 }
 
 a {
@@ -47,7 +48,7 @@ header .nav-bar {
   padding: 4px 8px;
   border-radius: 5px;
   position: absolute;
-  top: 2%;
+  top: 1%;
   left: 1%;
   cursor: pointer;
 }
@@ -131,6 +132,11 @@ header .nav-bar {
   background: #0061e0;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Google logo */
 
 .logo-container {
@@ -146,6 +152,7 @@ header .nav-bar {
 .logo img {
   margin: 0 auto;
   display: flex;
+  height: 100%;
 }
 
 /* search box and buttons */
@@ -162,7 +169,7 @@ header .nav-bar {
   position: relative;
   /* background-color: #0061e0; */
   height: 44px;
-  width: 43vw;
+  width: 600px;
   justify-content: center;
 }
 
@@ -176,7 +183,7 @@ header .nav-bar {
   transition: all 0.1s;
 }
 
-.search-bar .search-tooltip {
+/* .search-bar .search-tooltip {
   position: absolute;
   background-color: #2021249d;
   color: rgb(230, 228, 228);
@@ -192,7 +199,7 @@ header .nav-bar {
 
 .search-bar:hover .search-tooltip {
   opacity: 1;
-}
+} */
 
 .search:hover,
 .search:focus {
@@ -210,6 +217,7 @@ header .nav-bar {
   height: 50%;
   right: 3%;
   top: 30%;
+  cursor: pointer;
 }
 
 .voice-icon img {
@@ -296,6 +304,7 @@ header .nav-bar {
   display: flex;
   justify-content: center;
   margin-top: 12px;
+  /* flex-wrap: wrap; */
 }
 
 .langs {
@@ -326,11 +335,13 @@ header .nav-bar {
   bottom: 0;
   left: 0;
   right: 0;
+  /* max-height: 100px; */
 }
 
 .nigeria {
   background-color: #f0f1f1;
   display: flex;
+  flex-wrap: wrap;
   height: 48px;
   padding: 16px 0 0 30px;
   color: #70757a;
@@ -343,6 +354,7 @@ header .nav-bar {
   background-color: #f0f1f1;
   /* background-color: #202124; */
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
@@ -380,20 +392,6 @@ header .nav-bar {
   text-decoration: none;
   color: #70757a;
 }
-
-/* 
-.second {
-  flex: 1;
-  justify-content: center;
-}
-
-.third {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  padding: 0 25px;
-} */
 
 .start a:hover,
 .end a:hover,
